@@ -1,0 +1,10 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 48px;
+}
+.last_child {
+    margin-left: 0;
+}

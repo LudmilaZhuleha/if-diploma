@@ -1,0 +1,38 @@
+.primaryRedColor {
+    color: var(--general-red);
+}
+
+.primaryRedBg {
+    background-color: var(--general-red);
+}
+
+.primaryBlueColor {
+    color: var(--general-blue);
+}
+.primaryBlueBg {
+    background-color: var(--general-blue);
+}
+.secondaryBlueColor {
+    color: var(--secondary-blue);
+}
+.secondaryBlueBg {
+    background-color: var(--secondary-blue);
+}
+.blackColor {
+    color: var(--black);
+}
+.whiteColor {
+    color: var(--white);
+}
+.greyColor {
+    color: var(--grey);
+}
+.greyBg {
+    background-color: var(--grey);
+}
+.secondaryGreyColor {
+    color: var(--secondary-grey);
+}
+.secondaryGreyBg {
+    background-color: var(--secondary-grey);
+}

@@ -1,0 +1,44 @@
+.container_vertical {
+    width: 122px;
+    height: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+.container_horizontal {
+    display: flex;
+    gap: 12px;
+    width: 256px;
+    height: 185px;
+    margin-bottom: 48px;
+    cursor: pointer;
+}
+.wrap_horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_title {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+.card_title_bold {
+    composes: card_title;
+    font-weight: 700;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.starwrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}

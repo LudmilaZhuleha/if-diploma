@@ -1,0 +1,25 @@
+.item-login {
+    font-family: OpenSans, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--grey);
+    margin-left: 48px;
+    cursor: pointer;
+}
+.item-account {
+    font-family: OpenSans, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--grey);
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.active {
+    composes: item-account;
+    color: var(--general-red);
+}
+.hidden {
+    display: none;
+}
+

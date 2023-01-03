@@ -1,0 +1,11 @@
+export const user_username = "USER_USERNAME";
+export const user_birthday = "USER_BIRTHDAY";
+export const user_email = "USER_EMAIL";
+export const user_password = "USER_PASSWORD";
+export const fetched_books = "FETCHED_BOOKS";
+export const filtered_books = "FILTERED_BOOKS";
+export const return_from_orders = "RETURN_FROM_ORDERS";
+export const add_to_orders = "ADD_TO_ORDERS";
+export const add_to_waitingList = "ADD_TO_WAITING_LIST";
+export const logIn = "LOGIN";
+export const logOut = "LOGOUT";

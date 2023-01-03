@@ -1,0 +1,7 @@
+.container {
+    width: min(100%, 1440px);
+    height: auto;
+    margin: 0 auto;
+    padding: 37px 105px 105px;
+    background-color: var(--white);
+}

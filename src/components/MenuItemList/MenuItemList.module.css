@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    width: 169px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    position: absolute;
+    right: 106px;
+    z-index: 100;
+}
+.menu_item {
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--grey);
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.menu_item_bold {
+    composes: menu_item;
+    font-size: 18px;
+    color: var(--black);
+}
+.menu_item_red {
+    composes: menu_item;
+    color: var(--general-red);
+    text-align: center;
+    margin-top: 11px;
+}

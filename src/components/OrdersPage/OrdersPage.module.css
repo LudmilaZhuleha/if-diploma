@@ -1,0 +1,25 @@
+.container {
+    width: min(100%, 1440px);
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 105px 0 105px;
+    background-color: #FAFAFA;
+    position: relative;
+}
+.orders_title {
+    text-align: left;
+    font-family: OpenSans, serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.orders_text {
+    font-family: OpenSans, serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--secondary-grey);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

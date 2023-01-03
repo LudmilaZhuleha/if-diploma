@@ -1,0 +1,12 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    width: min(100%, 1440px);
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 105px 0 105px;
+    background-color: var(--white);
+}

@@ -1,0 +1,34 @@
+.input-field {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 8px;
+    padding: 13px 16px;
+    type: text;
+}
+.search-field {
+    composes: input-field;
+    width: 500px;
+    padding-left: 50px;
+    height: 48px;
+    border: 2px solid var(--general-red);
+}
+.search-field_grey {
+    composes: search-field;
+    border: 2px solid var(--secondary-grey);
+}
+.modal-field {
+    composes: input-field;
+    width: 320px;
+    height: 44px;
+    border: 1px solid var(--secondary-grey);
+    margin-bottom: 16px;
+}
+.modal-field-last {
+    composes: input-field;
+    width: 320px;
+    height: 44px;
+    border: 1px solid var(--grey);
+    margin-bottom: 24px;
+}

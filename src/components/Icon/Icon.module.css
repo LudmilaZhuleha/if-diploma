@@ -1,0 +1,63 @@
+.logo {
+    color: var(--general-red);
+    width: 172px;
+    height: 32px;
+    display: block;
+    margin-right: 96px;
+}
+.search {
+    width: 18px;
+    height: 18px;
+    color: var(--grey);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.account-logo {
+    color: var(--grey);
+    fill: var(--secondary-grey);
+    width: 36px;
+    height: 36px;
+    margin-right: 17px;
+}
+.open-arrow {
+    color: var(--grey);
+    width: 16px;
+    height: 10px;
+    cursor: pointer;
+}
+.socials {
+    width: 26px;
+    height: 26px;
+    color: var(--black);
+}
+.close {
+    width: 16px;
+    height: 16px;
+    color: var(--secondary-grey);
+}
+.star {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondary-grey);
+}
+.star-active {
+    composes: star;
+    fill: var(--black);
+}
+.star-book {
+    width: 25px;
+    height: 25px;
+    fill: var(--secondary-grey);
+    margin-right: 9px;
+}
+.star-book-active {
+    composes: star-book;
+    fill: var(--black);
+}
+.settings_icon {
+    width: 81px;
+    height: 81px;
+    color: var(--grey);
+    fill: #616161;
+}

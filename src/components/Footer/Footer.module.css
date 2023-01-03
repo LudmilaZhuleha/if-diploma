@@ -1,0 +1,28 @@
+.container {
+    width: min(100%, 1440px);
+    height: auto;
+    margin: 0 auto;
+    padding: 37px 105px;
+    display: flex;
+    justify-content: space-between;
+}
+h3 {
+    font-family: OpenSans, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+/*ul:last-child {*/
+/*    margin-left: 442px;*/
+/*}*/
+li {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
