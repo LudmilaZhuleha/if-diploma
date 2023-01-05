@@ -10,17 +10,17 @@ const SearchBar = ({onclick}) => {
   const dispatch = useDispatch();
   const allBooks = useSelector(state => state.fetchedBooksReducer.available);
 
-  // const getFilteredData = (array, val)=>{
-  //   return array.filter(
-  //     ({name, author}) => name.toLowerCase().trim().includes(val) || author.toLowerCase().trim().includes(val));
-  // };
-  // const saveFilteredBooks =(books)=>{
-  //   dispatch(filteredBooks(books));
-  // }
-  // useEffect(()=>{
-  //     const filteredList = getFilteredData(allBooks, value);
-  //     saveFilteredBooks(filteredList);
-  // }, [value])
+  const getFilteredData = (array, val)=>{
+    return array.filter(
+      ({name, author}) => name.toLowerCase().trim().includes(val) || author.toLowerCase().trim().includes(val));
+  };
+  const saveFilteredBooks =(books)=>{
+    dispatch(filteredBooks(books));
+  }
+  useEffect(()=>{
+      const filteredList = getFilteredData(allBooks, value);
+      saveFilteredBooks(filteredList);
+  }, [value])
 
   const search =(e)=>{
     setValue(e.target.value);

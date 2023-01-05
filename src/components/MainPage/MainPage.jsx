@@ -29,7 +29,7 @@ const MainPage = () => {
       <div className={styles.container}>
         <Header
           logo={<Icon id="logo" type="logo" />}
-          searchbar={<SearchBar />}
+          searchbar={<SearchBar onclick={()=>{alert("Please, log in first!")}}/>}
           menu={
             <Menu
               login={<MenuItem type="item-login" onClick={handleIsLogIn}>Log in</MenuItem>}

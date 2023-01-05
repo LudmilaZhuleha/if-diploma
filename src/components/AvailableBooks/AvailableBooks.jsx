@@ -8,14 +8,14 @@ const AvailableBooks = () => {
   const filteredBooks = useSelector(state => state.fetchedBooksReducer.filtered);
   return (
     <div className ={styles.cards}>
-      {
+      { filteredBooks.length < 12 ? (
         filteredBooks.map((item)=>{
           return (
-            <Link key={item.id} to={`/books/$item.id}`}>
-              <Card imageUrl={item.imageUrl} name={item.name} author={item.author} key={item.id} />
+            <Link key={item.id} to={`/${item.id}`}>
+              <Card card={item} key={item.id} />
             </Link>
           )
-        })}
+        })) : null}
     </div>
   );
 };

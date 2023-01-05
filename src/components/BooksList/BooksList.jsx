@@ -6,9 +6,21 @@ import { Link } from 'react-router-dom';
 import {useDispatch} from "react-redux";
 import {fetchedBooks} from "../../store/actions";
 import {CARD_BTN} from "../../../constants";
+import Button from "../Button/Button";
 
 const BooksList = () => {
   const [books, setBooks] = useState([]);
+  const currentPage = 1;
+  const [booksPerPage, setBooksPerPage] = useState(4);
+
+  const indexOfLastBook = currentPage * booksPerPage;
+  const indexOfFirstBook = indexOfLastBook - booksPerPage;
+  const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
+
+  const showMore = () => {
+    if(booksPerPage) setBooksPerPage(prev => prev + 4);
+  }
+
   const dispatch = useDispatch();
   const saveAllBooks =(books)=>{
     dispatch(fetchedBooks(books));
@@ -38,8 +50,8 @@ const BooksList = () => {
 
   return (
     <div className={styles.cards}>
-      {books.length > 0 ? (
-        books.map((book) => {
+      {currentBooks.length > 0 ? (
+        currentBooks.map((book) => {
           return (
             <Link key={book.id} to={`/${book.id}`}>
               <Card buttonType={CARD_BTN.ORDER} card={book} key={book.id}/>
@@ -47,8 +59,9 @@ const BooksList = () => {
           );
         })
       ) : (
-        <p>not found</p>
+        <p className={styles.loading}>...LOADING</p>
       )}
+      <Button clickHandler={showMore} style="primary">Show more</Button>
     </div>
   );
 };

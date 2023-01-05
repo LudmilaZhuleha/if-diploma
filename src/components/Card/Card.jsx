@@ -17,9 +17,7 @@ const Card = ({card, buttonType}) => {
     if (item.status === 'taken')
       dispatch(addToWaitingList(item));
   }
-  // const addToCartWaitingList = (item)=>{
-  //   dispatch(addToWaitingList(item));
-  // }
+
   const orders = useSelector(state=>state.ordersReducer.orders);
 
   const deleteBookFromOrders =(id)=>{

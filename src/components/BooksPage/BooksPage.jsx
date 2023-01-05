@@ -4,7 +4,6 @@ import MainContent from '../MainContent/MainContent';
 import Section from '../Section/Section';
 import Footer from '../Footer/Footer';
 import BooksList from '../BooksList/BooksList';
-import Button from '../Button/Button';
 import styles from './BooksPage.module.css';
 import Icon from '../Icon/Icon';
 import SearchBar from '../SearchBar/SearchBar';
@@ -54,9 +53,8 @@ const BooksPage = () => {
           <Section type="section-books">
             <h2>All Books</h2>
             <BooksList />
-            {/*<div dangerouslySetInnerHTML={{__html: sanitize('<a>Hello</a><p>World</p>')}} />*/}
           </Section>
-          <Button style="primary">Show more</Button>
+          {/*<Button style="primary">Show more</Button>*/}
         </MainContent>
       </div>
       <div style={{ backgroundColor: '#d3ebf9', margin: '' }}>
