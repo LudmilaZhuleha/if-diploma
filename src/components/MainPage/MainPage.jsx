@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import MainContent from '../MainContent/MainContent';
 import Footer from '../Footer/Footer';
@@ -18,22 +18,36 @@ const MainPage = () => {
   const [isLogInOpen, setIsLogInOpen] = useState(false);
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
-  const handleIsLogIn =()=>{
+  const handleIsLogIn = () => {
     setIsLogInOpen(true);
-  }
-  const handleIsSignUp =()=>{
+  };
+  const handleIsSignUp = () => {
     setIsSignUpOpen(!isSignUpOpen);
-  }
+  };
   return (
     <>
       <div className={styles.container}>
         <Header
           logo={<Icon id="logo" type="logo" />}
-          searchbar={<SearchBar onclick={()=>{alert("Please, log in first!")}}/>}
+          searchbar={
+            <SearchBar
+              onclick={() => {
+                alert('Please, log in first!');
+              }}
+            />
+          }
           menu={
             <Menu
-              login={<MenuItem type="item-login" onClick={handleIsLogIn}>Log in</MenuItem>}
-              signup={<MenuItem type="item-login" onClick={handleIsSignUp}>Sign Up</MenuItem>}
+              login={
+                <MenuItem type="item-login" onClick={handleIsLogIn}>
+                  Log in
+                </MenuItem>
+              }
+              signup={
+                <MenuItem type="item-login" onClick={handleIsSignUp}>
+                  Sign Up
+                </MenuItem>
+              }
             />
           }
         />
@@ -42,15 +56,18 @@ const MainPage = () => {
             <h1>Build your library</h1>
             <p>Over 400.000 books from fiction to the business literature</p>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <Button style="primary" onClick={handleIsSignUp}>Let's start</Button>
+            <Button style="primary" onClick={handleIsSignUp}>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              Let's start
+            </Button>
           </Section>
         </MainContent>
       </div>
       <div style={{ backgroundColor: '#d3ebf9' }}>
         <Footer />
       </div>
-      {isSignUpOpen && (<ModalSignUp />)}
-      {isLogInOpen && (<ModalLogIn />)}
+      {isSignUpOpen && <ModalSignUp />}
+      {isLogInOpen && <ModalLogIn />}
     </>
   );
 };

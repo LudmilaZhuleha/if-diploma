@@ -24,6 +24,7 @@
 .section-books {
     padding: 26px 36px;
     height: auto;
+    width: 100%;
 }
 .section-orders {
     height: auto;
