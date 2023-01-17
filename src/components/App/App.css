@@ -1,57 +1,57 @@
 @font-face {
     font-family: 'OpenSans';
-    src: local('OpenSans'), url(../../fonts/OpenSans-Regular.ttf) format('opentype');
+    src: local('OpenSans'), url(../../../public/fonts/OpenSans-Regular.woff2) format('opentype');
 }
 @font-face {
     font-family: 'OpenSans';
     font-weight: 600;
-    src: local('OpenSans'), url(../../fonts/OpenSans-Bold.ttf) format('opentype');
+    src: local('OpenSans'), url(../../../public/fonts/OpenSans-Bold.woff2) format('opentype');
 }
 @font-face {
     font-family: 'OpenSans';
     font-weight: 500;
-    src: local('OpenSans'), url(../../fonts/OpenSans-SemiBold.ttf) format('opentype');
+    src: local('OpenSans'), url(../../../public/fonts/OpenSans-SemiBold.woff2) format('opentype');
 }
 @font-face {
     font-family: 'Roboto';
     font-weight: 400;
-    src: local('Roboto'), url(../../fonts/Roboto-Regular.ttf) format('opentype');
+    src: local('Roboto'), url(../../../public/fonts/Roboto-Regular.woff2) format('opentype');
 }
 @font-face {
     font-family: 'Roboto';
     font-weight: 600;
-    src: local('Roboto'), url(../../fonts/Roboto-Bold.ttf) format('opentype');
+    src: local('Roboto'), url(../../../public/fonts/Roboto-Bold.woff2) format('opentype');
 }
 @font-face {
     font-family: 'Helvetica';
     font-weight: 400;
-    src: local('Helvetica'), url(../../fonts/Helvetica.ttf) format('opentype');
+    src: local('Helvetica'), url(../../../public/fonts/Helvetica.woff2) format('opentype');
 }
 @font-face {
     font-family: 'Helvetica';
     font-weight: 600;
-    src: local('Helvetica'), url(../../fonts/Helvetica-Bold.ttf) format('opentype');
+    src: local('Helvetica'), url(../../../public/fonts/Helvetica-Bold.woff2) format('opentype');
 }
 
 @font-face {
     font-family: 'Helvetica Neue Roman';
-    src: local('Helvetica Neue'), url(../../fonts/HelveticaNeueLTStd-Roman.otf) format('opentype');
+    src: local('Helvetica Neue'), url(../../../public/fonts/HelveticaNeueLTStd-Roman.woff2) format('opentype');
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
     font-weight: 600;
-    src: local('HelveticaNeue'), url(../../fonts/HelveticaNeueLTStd73-Bold-Extended.otf) format('opentype');
+    src: local('HelveticaNeue'), url(../../../public/fonts/HelveticaNeueLTStd73-Bold-Extended.woff2) format('opentype');
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
     font-weight: 400;
-    src: local('HelveticaNeue'), url(../../fonts/HelveticaNeue-Regular.ttf) format('opentype');
+    src: local('HelveticaNeue'), url(../../../public/fonts/HelveticaNeue-Regular.woff2) format('opentype');
 }
 @font-face {
     font-family: 'HelveticaNeue';
     font-weight: 300;
-    src: local('HelveticaNeue'), url(../../fonts/HelveticaNeueLTStd45-Light.otf) format('opentype');
+    src: local('HelveticaNeue'), url(../../../public/fonts/HelveticaNeueLTStd45-Light.woff2) format('opentype');
 }
 
