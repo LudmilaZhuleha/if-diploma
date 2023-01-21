@@ -4,19 +4,25 @@ import Input from '../Input/Input';
 import styles from './SearchBar.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { filteredBooks } from '../../store/actions';
-import {getFilteredData} from "../../helpers/functions";
+// import {getFilteredData} from "../../helpers/functions";
 // eslint-disable-next-line react/prop-types
 const SearchBar = ({ onclick }) => {
   const [value, setValue] = useState('');
   const dispatch = useDispatch();
   const allBooks = useSelector((state) => state.fetchedBooksReducer.available);
-
+  const getFilteredData = (array, val) => {
+    return array.filter(
+      ({ name, author }) =>
+        name.toLowerCase().trim().includes(val) || author.toLowerCase().trim().includes(val),
+    );
+  };
   const saveFilteredBooks = (books) => {
     dispatch(filteredBooks(books));
   };
+
   useEffect(() => {
-    const filteredList = getFilteredData(allBooks, value);
-    saveFilteredBooks(filteredList);
+    if (allBooks)
+    saveFilteredBooks(getFilteredData(allBooks, value));
   }, [value]);
 
   const search = (e) => {
