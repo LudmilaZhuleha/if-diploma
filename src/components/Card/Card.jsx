@@ -13,6 +13,7 @@ const Card = ({ card, buttonType }) => {
   const addToCart = (item) => {
     if (item.status === 'available') dispatch(addToOrders(item));
     if (item.status === 'taken') dispatch(addToWaitingList(item));
+    navigate('/orders');
   };
 
   const orders = useSelector((state) => state.ordersReducer.orders);
@@ -24,6 +25,7 @@ const Card = ({ card, buttonType }) => {
   };
   const returnBookFromOrders = (id) => {
     dispatch(returnFromOrders(deleteBookFromOrders(id)));
+    navigate('/orders');
   };
 
   const checkBookStatus = () => {

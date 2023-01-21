@@ -3,6 +3,7 @@
     height: 300px;
     text-align: center;
     cursor: pointer;
+    z-index: -1;
 }
 .container_horizontal {
     display: flex;
