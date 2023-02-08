@@ -10,12 +10,10 @@ const SearchBar = ({ onclick }) => {
   const [value, setValue] = useState('');
   const dispatch = useDispatch();
   const allBooks = useSelector((state) => state.fetchedBooksReducer.available);
-  const getFilteredData = (array, val) => {
-    return array.filter(
+  const getFilteredData = (array, val) => array.filter(
       ({ name, author }) =>
         name.toLowerCase().trim().includes(val) || author.toLowerCase().trim().includes(val),
     );
-  };
   const saveFilteredBooks = (books) => {
     dispatch(filteredBooks(books));
   };

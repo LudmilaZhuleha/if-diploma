@@ -8,6 +8,7 @@ import { fetchedBooks } from '../../store/actions';
 import { CARD_BTN } from '../../../constants';
 import Button from '../Button/Button';
 import {random} from "../../helpers/functions";
+import Loader from "../Loader/Loader";
 
 const BooksList = () => {
   const [books, setBooks] = useState([]);
@@ -56,7 +57,7 @@ const BooksList = () => {
           );
         })
       ) : (
-        <p className={styles.loading}>...LOADING</p>
+        <Loader />
       )}
       <Button clickHandler={showMore} style="primary">
         Show more

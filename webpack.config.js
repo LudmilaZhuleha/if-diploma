@@ -3,7 +3,6 @@ const path = require('path');
 // const autoprefixer = require('autoprefixer');
 // eslint-disable-next-line no-undef
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 // eslint-disable-next-line no-undef
 module.exports = {
   "entry": './src/index.js',
@@ -13,14 +12,13 @@ module.exports = {
     "filename": "bundle[hash].js",
     "chunkFilename": "[id].js",
     "publicPath": "",
-    "clean": true,
   },
   "resolve": {
     "extensions": ['.js', '.jsx'],
-    "fallback": {
-      // eslint-disable-next-line no-undef
-      "buffer": require.resolve("buffer/"),
-    }
+    // "fallback": {
+    //   // eslint-disable-next-line no-undef
+    //   "buffer": require.resolve("buffer/"),
+    // }
   },
   "module": {
     "rules": [
@@ -46,9 +44,11 @@ module.exports = {
   "plugins": [
     new HtmlWebpackPlugin({
       // eslint-disable-next-line no-undef
-      "template": __dirname + '/public/index.html',
-      "filename": "index.html",
-      "inject": 'body',
+      // "template": __dirname + '/public/index.html',
+      // eslint-disable-next-line no-undef
+      template: path.join(__dirname, "public/index.html"),
+      filename: "index.html",
+      inject: "body",
     })
   ]
 
